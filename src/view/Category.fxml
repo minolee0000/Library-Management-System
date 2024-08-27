@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c8d6e5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CRUDCategoryController">
+   <children>
+      <Label layoutX="169.0" layoutY="14.0" text="BOOK CATEGORIES">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCategoryID" layoutX="33.0" layoutY="68.0" promptText="categoryID" />
+      <TextField fx:id="txtCategoryName" layoutX="33.0" layoutY="103.0" promptText="Category Name" />
+      <TextField fx:id="txtQty" layoutX="33.0" layoutY="138.0" promptText="Qty" />
+      <JFXButton fx:id="btnCategoryAddOnAction" layoutX="217.0" layoutY="66.0" onAction="#categoryAddOnAction" style="-fx-background-color: #222f3e; -fx-background-radius: 20;" text="ADD" textFill="#f7f5f5" />
+      <JFXButton fx:id="btnCategoryUpdateOnAction" layoutX="208.0" layoutY="100.0" onAction="#categoryUpdateOnAction" style="-fx-background-color: #222f3e; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE" />
+      <JFXButton fx:id="btnCategoryDeleteOnAction" layoutX="210.0" layoutY="138.0" onAction="#categoryDeleteOnAction" style="-fx-background-color: #222f3e; -fx-background-radius: 20;" text="DELETE" textFill="#f4efef" />
+      <TextField fx:id="txtCategorySearch" layoutX="315.0" layoutY="100.0" promptText="Search For a Category" />
+      <TableView fx:id="tblCategory" layoutY="186.0" onMouseClicked="#mouseClickOnAction" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="colCategoryId" prefWidth="112.79998779296875" text="CategoryID" />
+          <TableColumn fx:id="colCategoryName" prefWidth="358.4000244140625" text="Category Name" />
+            <TableColumn fx:id="colQty" prefWidth="128.79998779296875" text="Qty" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnCategorySearchOnAction1" layoutX="355.0" layoutY="138.0" onAction="#categorySearchOnAction" style="-fx-background-color: #222f3e; -fx-background-radius: 20;" text="SEARCH" textFill="#f4efef" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="543.0" style="-fx-background-color: #c8d6e5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label fx:id="lblTopicUser" alignment="CENTER" prefHeight="86.0" prefWidth="543.0" text="LIBRARY MANAGEMENT SYSTEM" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnUserOnAction" alignment="CENTER" layoutX="94.0" layoutY="114.0" onAction="#btnUserOnAction" prefHeight="86.0" prefWidth="155.0" style="-fx-background-radius: 20; -fx-background-color: #10ac84;" text="USER">
+         <font>
+            <Font name="ArtifaktElement-Book" size="31.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAdminOnAction" alignment="CENTER" layoutX="287.0" layoutY="114.0" onAction="#btnAdminAction" prefHeight="86.0" prefWidth="162.0" style="-fx-background-radius: 20; -fx-background-color: #10ac84;" text="ADMIN">
+         <font>
+            <Font name="ArtifaktElement-Book" size="31.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

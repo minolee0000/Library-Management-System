@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c8d6e5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CRUDBookController">
+   <children>
+      <Label alignment="CENTER" layoutX="240.0" layoutY="14.0" text="BOOKS">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookName" layoutX="24.0" layoutY="89.0" promptText="BookName" />
+      <TextField fx:id="txtBookID" layoutX="24.0" layoutY="52.0" promptText="BookID" />
+      <TextField fx:id="txtAuthor" layoutX="24.0" layoutY="125.0" promptText="Author" />
+      <JFXButton fx:id="btnBookAddOnAction" layoutX="227.0" layoutY="76.0" onAction="#bookAddOnAction" style="-fx-background-color: #222f3e; -fx-background-radius: 20;" text="ADD" textFill="#f7f5f5" />
+      <JFXButton fx:id="btnBookUpdateOnAction" layoutX="218.0" layoutY="110.0" onAction="#bookUpdateOnAction" style="-fx-background-color: #222f3e; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE" />
+      <JFXButton fx:id="btnBookDeleteOnAction" layoutX="220.0" layoutY="148.0" onAction="#bookDeleteOnAction" style="-fx-background-color: #222f3e; -fx-background-radius: 20;" text="DELETE" textFill="#f4efef" />
+      <TextField fx:id="txtBookSearch" layoutX="356.0" layoutY="112.0" promptText="Search Book By ID" />
+      <JFXButton fx:id="btnBookSearchOnAction1" layoutX="403.0" layoutY="149.0" onAction="#bookSearchOnAction" style="-fx-background-color: #222f3e; -fx-background-radius: 20;" text="SEARCH" textFill="#f4efef" />
+      <TableView fx:id="tblBooks" layoutX="-1.0" layoutY="200.0" onMouseClicked="#tblMouseClickedOnAction" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="colBookID" prefWidth="75.0" text="BookID" />
+          <TableColumn fx:id="colBookName" prefWidth="237.59998321533203" text="Book Name" />
+            <TableColumn fx:id="colAuthor" prefWidth="128.79998779296875" text="Author" />
+            <TableColumn fx:id="colBookAvailability" prefWidth="157.59994506835938" text="Availability" />
+            <TableColumn fx:id="colBookName12" prefWidth="180.7999267578125" text="Author" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtAvailability" layoutX="24.0" layoutY="161.0" promptText="Availability (1 or 0 ) " />
+   </children>
+</AnchorPane>

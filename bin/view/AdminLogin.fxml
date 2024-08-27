@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="229.0" layoutY="35.0" prefHeight="38.0" prefWidth="138.0" text="Admin">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAdminUser_name" layoutX="229.0" layoutY="111.0" promptText="user_name" />
+      <TextField fx:id="txtAdminPw" layoutX="229.0" layoutY="151.0" promptText="password" />
+      <JFXButton fx:id="btnAdminLoginOnAction" layoutX="274.0" layoutY="211.0" onAction="#adminLoginOnAction" style="-fx-background-color: #222f3e;" text="Login" textFill="#f7f1f1" />
+   </children>
+</AnchorPane>
