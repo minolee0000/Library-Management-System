@@ -29,7 +29,7 @@
           <TableColumn fx:id="colBookName" prefWidth="237.59998321533203" text="Book Name" />
             <TableColumn fx:id="colAuthor" prefWidth="128.79998779296875" text="Author" />
             <TableColumn fx:id="colBookAvailability" prefWidth="157.59994506835938" text="Availability" />
-            <TableColumn fx:id="colBookName12" prefWidth="180.7999267578125" text="Author" />
+            
         </columns>
       </TableView>
       <TextField fx:id="txtAvailability" layoutX="24.0" layoutY="161.0" promptText="Availability (1 or 0 ) " />

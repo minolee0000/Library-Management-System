@@ -16,7 +16,7 @@ public class BookDaoImpl implements BookDao {
 
     @Override
     public boolean update(BookEntity t) throws Exception {
-        return CrudUtil.executeUpdate("UPDATE Book set WHERE bookID = ?", t.getBookName(),t.getAuthor(),t.getAvailability(),t.getBookID());
+        return CrudUtil.executeUpdate("UPDATE Book set bookName = ?, Author = ?, Availability = ? WHERE bookID = ?", t.getBookName(),t.getAuthor(),t.getAvailability(),t.getBookID());
     }
 
     @Override
@@ -45,10 +45,9 @@ public class BookDaoImpl implements BookDao {
         while(rst.next()){
             BookEntity entity = new BookEntity(rst.getString("bookID"),
                                                         rst.getString("bookName"),
-                                                        (rst.getString("Author")),rst.getBoolean("Availability+"));
+                                                        (rst.getString("Author")),rst.getBoolean("Availability"));
 
-            bookEntities.add(entity);
-            
+            bookEntities.add(entity);    
         }
         return bookEntities;
     }

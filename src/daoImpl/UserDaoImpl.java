@@ -71,7 +71,6 @@ public class UserDaoImpl implements UserDao{
             userList.add(entities);
         }
         return userList;
-        
-        // userTMList to an entity
+
     }
 }

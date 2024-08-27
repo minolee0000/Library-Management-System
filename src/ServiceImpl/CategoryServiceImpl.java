@@ -15,7 +15,6 @@ public class CategoryServiceImpl implements CategoryService{
     @Override
     public String save(CategoryDto categoryDto) throws Exception {
         CategoryEntity entity = getCategoryEntity(categoryDto);
-        System.out.println("Success");
         return categoryDao.create(entity) ? "success" : "Fail"; 
     }
 

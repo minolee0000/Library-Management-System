@@ -20,9 +20,8 @@ public class CrudUtil {
         return statement;
     }
     public static boolean executeUpdate(String sql , Object...args)throws Exception{ 
-        System.out.println("minoli");
         return getPreparedStatement(sql, args).executeUpdate() >0 ;
-    }
+    } 
     
     public static ResultSet executeQuery(String sql , Object...args)throws Exception{
         return getPreparedStatement(sql, args).executeQuery() ;

@@ -22,6 +22,9 @@ public class AdminController {
     private JFXButton btnUserOnAction;
 
     @FXML
+    private JFXButton btnTransactionOnAction;
+
+    @FXML
     void BooksOnAction(ActionEvent event) throws IOException {
         System.out.println("Button Books Clicked");
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/Book.fxml"));
@@ -51,4 +54,16 @@ public class AdminController {
             stage.setTitle("User Information Form");
     }
 
+    @FXML
+    void TransactionOnAction(ActionEvent event) throws IOException {
+        System.out.println("Button Transaction Clicked");
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/Transaction.fxml"));
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+            stage.setTitle("Transaction Form");
+    }
 }
+
+
+

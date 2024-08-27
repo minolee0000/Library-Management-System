@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c8d6e5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
    <children>
       <Label alignment="CENTER" layoutX="155.0" layoutY="30.0" text="Administration">
@@ -24,6 +23,11 @@
          </font>
       </JFXButton>
       <JFXButton fx:id="btnBooksOnAction" layoutX="402.0" layoutY="167.0" onAction="#BooksOnAction" prefHeight="84.0" prefWidth="166.0" style="-fx-background-color: #576574; -fx-background-radius: 20;" text="BOOKS">
+         <font>
+            <Font name="ArtifaktElement-Book" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnTransactionOnAction" layoutX="200.0" layoutY="284.0" onAction="#TransactionOnAction" prefHeight="84.0" prefWidth="199.0" style="-fx-background-color: #576574; -fx-background-radius: 20;" text="TRANSACTION">
          <font>
             <Font name="ArtifaktElement-Book" size="24.0" />
          </font>

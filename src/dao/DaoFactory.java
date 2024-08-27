@@ -2,6 +2,7 @@ package dao;
 
 import daoImpl.BookDaoImpl;
 import daoImpl.CategoryDaoImpl;
+import daoImpl.TransactionDaoImpl;
 import daoImpl.UserDaoImpl;
 
 public class DaoFactory {
@@ -26,6 +27,8 @@ public class DaoFactory {
                 return new  CategoryDaoImpl();
             case BOOK:
                 return new BookDaoImpl();
+            case TRANSACTION:
+                return new TransactionDaoImpl();
             default: 
                 return null;
         }
@@ -33,6 +36,6 @@ public class DaoFactory {
     }
     
     public enum DaoTypes{
-        USER, CATEGORY,BOOK
+        USER, CATEGORY,BOOK,TRANSACTION
     }
 }

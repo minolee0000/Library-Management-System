@@ -67,12 +67,12 @@ public class CRUDCategoryController {
     }
 
     @FXML
-    void categorySearchOnAction(ActionEvent event) {
+    void categorySearchOnAction(ActionEvent event) throws Exception {
         searchCategory();
     }
 
     @FXML
-    void categoryUpdateOnAction(ActionEvent event) {
+    void categoryUpdateOnAction(ActionEvent event) throws Exception {
         updateCategory();
     }
 
@@ -113,7 +113,7 @@ public class CRUDCategoryController {
         }
     }
 
-    private void updateCategory(){
+    private void updateCategory()throws Exception{
         try {
             CategoryDto dto = new CategoryDto(txtCategoryID.getText(),
                                                         txtCategoryName.getText(),
@@ -134,7 +134,7 @@ public class CRUDCategoryController {
         }
     }
 
-    private void searchCategory() {
+    private void searchCategory() throws Exception {
         try {
             CategoryDto dto = CategoryController.get(txtCategorySearch.getText());
             if (dto!= null){
